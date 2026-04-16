@@ -19,6 +19,9 @@ public abstract class Vehiculo {
         this.tipo = tipo;
     }
 
+    public Marca getMarca() { return marca; }
+    public void setMarca(Marca marca) { this.marca = marca; }
+    
     public String getPatente() {
         return patente;
     }
