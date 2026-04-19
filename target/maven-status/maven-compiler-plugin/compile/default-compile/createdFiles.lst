@@ -1,5 +1,6 @@
 data\Persistencia.class
 domain\VehiculoCombustible.class
+domain\Marca.class
 domain\Responsable.class
 domain\Vehiculo.class
 views\ListarVehiculosView$1.class
