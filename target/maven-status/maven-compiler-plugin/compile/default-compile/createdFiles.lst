@@ -1,3 +1,4 @@
+views\IngresarVehiculo$5.class
 data\Persistencia.class
 domain\VehiculoCombustible.class
 domain\Marca.class
@@ -5,11 +6,14 @@ domain\Responsable.class
 domain\Vehiculo.class
 views\ListarVehiculosView$1.class
 domain\VehiculoElectrico.class
+views\IngresarVehiculo$3.class
+views\IngresarVehiculo$4.class
 views\Controlador.class
 app\Program.class
 views\IngresarVehiculo$2.class
 views\VehiculoViewModel.class
 views\ListarVehiculosView.class
+views\ListarVehiculosView$3.class
 domain\Sucursal.class
 views\ListarVehiculosView$2.class
 domain\VehiculoTipo.class
