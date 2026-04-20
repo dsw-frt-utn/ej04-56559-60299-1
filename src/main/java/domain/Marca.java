@@ -14,9 +14,10 @@ public class Marca {
     
     public String getPais() { return pais; }
     public void setPais(String pais) { this.pais = pais; }
+
     
-    @Override
+    /*@Override
     public String toString() {
         return nombre + " (" + pais + ")";
-    }
+    }*/
 }

@@ -6,6 +6,7 @@ import domain.VehiculoTipo;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Optional;
+import domain.*;
 
 public class Controlador {
     
@@ -31,4 +32,30 @@ public class Controlador {
         }
         return new double[] {consumoElectricos, consumoCombustible};
     }
+    
+    /*public static void addVehiculoElectrico(String patente, String nombremarca,String paismarca, String modelo, int anio, double capcarga, String sucursal, double kwhBase){
+    Marca m = new Marca( nombremarca, paismarca);
+    Sucursal s = new Sucursal(sucursal, "","",null);
+    VehiculoElectrico v = new VehiculoElectrico(patente, m ,modelo, anio, capcarga, s, kwhBase);
+    
+    Persistencia.addVehiculo(v);*/
+    
+    public static void addVehiculoElectrico(String patente, Marca marca, String modelo, int anio, double carga, String sucursal, double kwhBase){
+        Marca m = marca;
+        Sucursal s = new Sucursal(sucursal, "","",null);
+        VehiculoElectrico v = new VehiculoElectrico(patente, m, modelo, anio, carga, s, kwhBase);
+        
+        Persistencia.addVehiculo(v);
+    }
+    
+    public static void addVehiculoCombustible(String patente, Marca marca, String modelo, int anio, double carga, String sucursal, double kmLitro, double extraLitro){
+        
+        Marca m = marca;
+        Sucursal s = new Sucursal(sucursal, "","",null);
+        VehiculoCombustible v = new VehiculoCombustible(patente, m, modelo, anio, carga,s, kmLitro, extraLitro);
+        
+        Persistencia.addVehiculo(v);
+        
+    }
+    
 }
