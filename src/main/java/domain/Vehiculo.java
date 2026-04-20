@@ -2,14 +2,14 @@ package domain;
 
 public abstract class Vehiculo {
     protected String patente;
-    protected String marca;
+    protected Marca marca;
     protected String modelo;
     protected int anio;
     protected double capacidadCarga;
     protected Sucursal sucursal;
     private VehiculoTipo tipo;
 
-    public Vehiculo(VehiculoTipo tipo, String patente, String marca, String modelo, int anio, double capacidadCarga, Sucursal sucursal) {
+    public Vehiculo(VehiculoTipo tipo, String patente, Marca marca, String modelo, int anio, double capacidadCarga, Sucursal sucursal) {
         this.patente = patente;
         this.marca = marca;
         this.modelo = modelo;
@@ -19,6 +19,9 @@ public abstract class Vehiculo {
         this.tipo = tipo;
     }
 
+    public Marca getMarca() { return marca; }
+    public void setMarca(Marca marca) { this.marca = marca; }
+    
     public String getPatente() {
         return patente;
     }
